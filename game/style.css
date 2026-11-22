@@ -1,0 +1,32 @@
+/* style.css — page chrome around the Lantern Heist canvas. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0d0a09;
+  color: #e8dcc0;
+  font-family: Georgia, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+}
+main { padding: 18px 12px 28px; max-width: 1000px; }
+canvas {
+  display: block;
+  width: 960px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #6b4a26;
+  border-radius: 6px;
+  background: #14100e;
+}
+.controls {
+  margin: 12px 0 4px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #ffd65a;
+}
+.goal {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #cbb98f;
+}

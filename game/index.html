@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Heist — The Ember Museum</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <canvas id="game" width="960" height="688"></canvas>
+  <p class="controls">WASD / arrows — move &nbsp;·&nbsp; Shift — sneak (quiet, hard to spot) &nbsp;·&nbsp; Space — run (fast, loud) &nbsp;·&nbsp; Click — walk to a spot &nbsp;·&nbsp; R — restart &nbsp;·&nbsp; P — pause &nbsp;·&nbsp; M — mute</p>
+  <p class="goal">Steal all 3 golden relics, then reach the green EXIT unseen. Crates and bushes block guard vision — crouch in a bush to vanish. Shadow halves how fast you are spotted. If the alarm sounds, break line of sight for 4 seconds to calm the guards.</p>
+</main>
+<script type="module">
+import { startGame } from './src/game.js';
+const canvas = document.getElementById('game');
+startGame(canvas);
+</script>
+</body>
+</html>
